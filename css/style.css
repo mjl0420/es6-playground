@@ -1,0 +1,48 @@
+.reveal section img {
+    border: none;
+}
+.reveal pre {
+    width: 100%;
+}
+.reveal .jump h2 {
+    font-size: 4em;
+    color: #444;
+}
+#components .compare > div {
+    float: left;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+#components .compare .ng1 > div, #components .compare .ng2 > div {
+    width: 260px;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 10px;
+    background-color: #0143A3;
+    float: left;
+}
+#components .compare .ng1 .divider, #components .compare .ng2 .divider {
+    width: 40px;
+    height: 100px;
+    line-height: 100px;
+    background-color: transparent;
+}
+.reveal button,.reveal input {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+}
+.reveal button:hover, .reveal button:focus {
+    color: #fff;
+    background-color: #08a1ef;
+}
