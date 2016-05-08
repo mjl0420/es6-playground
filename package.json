@@ -10,5 +10,8 @@
     "es6"
   ],
   "author": "Wang John",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2"
+  }
 }
