@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Introduction to ES6 & Typescript</title>
+		<title>Introduction to ES6</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -105,7 +105,10 @@ console.log( a );
 }
                         </code></pre>
                     </p>
-
+                    <p>More info:
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" target="_blank">let statements</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" target="_blank">const statement</a>
+                    </p>
                 </section>
                 <section>
                     <h2>Spread/Rest</h2>
@@ -120,6 +123,10 @@ function foo(x, y, ...z) {
 }
 foo( 1, 2, 3, 4, 5 ); // 1 2 [3,4,5]
                         </code></pre>
+                    </p>
+                    <p>More info:
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator" target="_blank">Spread Operator</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters" target="_blank">Rest parameters</a>
                     </p>
                 </section>
                 <section>
@@ -153,6 +160,9 @@ y=6;
 foo( undefined, 10 );// 9 10
                         </code></pre>
                     </p>
+                    <p>More info:
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters" target="_blank">Default parameters</a>
+                    </p>
                 </section>
 
                 <section>
@@ -181,6 +191,7 @@ foo( { y: 42 } );// undefined 42
 foo( {} );// undefined undefined
                         </code></pre>
                     </p>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">MDN Destructuring assignment</a></p>
                 </section>
                 <section>
                     <h2>Object Literal Extensions</h2>
@@ -217,6 +228,7 @@ var x=2,y=3,//Concise Methods
     };
                         </code></pre>
                     </p>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals" target="_blank">MDN Grammer and types: Object literals</a></p>
                 </section>
                 <section>
                     <h2>Template Literals</h2>
@@ -246,6 +258,7 @@ var name = "global";
 bar(); // "Hello from bar!"
                         </code></pre>
                     </p>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings" target="_blank">MDN Template Strings</a></p>
                 </section>
                 <section>
                     <h2>Arrow Functions</h2>
@@ -273,6 +286,7 @@ function Bar() {
 var b = new Bar;
                         </code></pre>
                     </p>
+                    <p>More info: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">MDN Arrow Functions</a></p>
                 </section>
                 <section>
                     <h2>for..of Loops</h2>
@@ -289,6 +303,9 @@ for(var val of a){
 }
 //for..in loops over the keys/indexes in the a array, while for..of loops over the values in a.
                         </code></pre>
+                    </p>
+                    <p>More info:
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank">MDN for...of</a>
                     </p>
                 </section>
                 <section>
@@ -321,6 +338,7 @@ b.z; // 25
 b.gimmeXYZ(); // 1875
                         </code></pre>
                     </p>
+                    <p>More info: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes" target="_blank">MDN Classes</a></p>
                 </section>
                 <section>
                     <h2>Modules</h2>
@@ -336,18 +354,35 @@ FOOFN();
 bar();
 BAZ();
                         </code></pre>
+                    <p>More info:
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank">import statement</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" target="_blank">export statement</a>
+                    </p>
                 </section>
                 <section>
-                    <h2>Others</h2>
-                    <ul>
-                        <li>Symbol</li>
-                        <li>Iterator</li>
-                        <li>Generator</li>
-                    </ul>
+                    <h2>Symbol</h2>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank">MDN Symbol</a></p>
+                </section>
+                <section>
+                    <h2>Iterator</h2>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols" target="_blank">MDN Iteration protocols</a></p>
+                </section>
+                <section>
+                    <h2>Generator</h2>
+                    <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols" target="_blank">MDN Iteration protocols</a></p>
                 </section>
                 <section>
                     <h2>Transpile ES6</h2>
                     <p><a href="https://babeljs.io">Babel.js</a></p>
+                    <p><a href="https://babeljs.io">Traceur.js</a></p>
+                    <p><a href="https://babeljs.io">Typescript</a></p>
+                </section>
+                <section>
+                    <h2>资料地址</h2>
+                    <ul>
+                        <li><a href="http://www.infoq.com/cn/minibooks/ES6-in-Depth" target="_blank">ECMAScript深入浅出</a></li>
+                        <li><a href="http://es6.ruanyifeng.com/" target="_blank">ECMAScript 6 入门</a></li>
+                    </ul>
                 </section>
 			</div>
 
