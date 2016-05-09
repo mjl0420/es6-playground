@@ -47,10 +47,13 @@ john.walk();
 
 //arrow function
 'use strict';
-var grades = [{name: 'John', grade: 98}, {name: 'July', grade: 100}];
-grades.filter(person => person.grade > 100)
-    .map(person => person.name)
-    .forEach(name => console.info(name));
+var grades = [
+    {name: 'John', grade: 98},
+    {name: 'July', grade: 100}
+];
+grades.filter(person => person.grade >= 100)
+    //.forEach(person => console.info(person.name));
+    .forEach(({name}) => console.info(name));
 
 //destructuring assignment
 
