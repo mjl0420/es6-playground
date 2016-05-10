@@ -6,13 +6,24 @@
 </head>
 <body>
 <div>
-    <h1>可能需要执行的命令</h1>
-    <ul>
-        <li><code>npm install -g webpack</code></li>
-        <li><code>npm install --save babel</code></li>
-        <li><code>npm install --save-dev babel-loader</code></li>
-    </ul>
+    <h1>ES6 Module Using SystemJs</h1>
 </div>
-<script src="bundle.js"></script>
+<script src="node_modules/traceur/bin/traceur.js"></script>
+<script src="node_modules/traceur/bin/BrowserSystem.js"></script>
+<script src="node_modules/traceur/bin/traceur-runtime.js"></script>
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+    System.config({
+        packages: {
+            app: {
+                defaultExtension: 'js'
+            }
+        }
+    });
+
+    System.import('./src/app/app.js').catch(function(err){
+        console.error(err);
+    });
+</script>
 </body>
 </html>
