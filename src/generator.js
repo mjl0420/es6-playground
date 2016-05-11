@@ -15,9 +15,9 @@ console.info(action.next());
 
 
 function* fab(max) {
-    var count = 0, last = 0, current = 1;
+    var last = 0, current = 1;
 
-    while(max > count++) {
+    while(max >= current) {
         yield current;
         var tmp = current;
         current += last;
@@ -25,7 +25,7 @@ function* fab(max) {
     }
 }
 
-var o = fab(10), ret, result = [];
+var o = fab(50), ret, result = [];
 
 while(!(ret = o.next()).done) {
     result.push(ret.value);
@@ -33,9 +33,9 @@ while(!(ret = o.next()).done) {
 
 console.log(result); // [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
-console.info([...fab(10)]);
+console.info([...fab(50)]);
 
-for(let current of fab(10)) {
+for(let current of fab(50)) {
     console.info(current);
 }
 
