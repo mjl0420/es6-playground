@@ -38,3 +38,26 @@ console.info([...fab(10)]);
 for(let current of fab(10)) {
     console.info(current);
 }
+
+
+var Fab = {
+    [Symbol.iterator]() {
+        var n1 = 1,
+            n2 = 1;
+        return {
+            next() {
+                var current = n2;
+                n2 = n1;
+                n1 = n1 + current;
+                return {value: current, done: false};
+            }
+        }
+    }
+};
+for (var v of Fab) {
+    //数列是无限的，需要借助break跳出循环
+    console.log( v );
+    if (v > 50) {
+        break;
+    }
+}
