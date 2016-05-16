@@ -371,6 +371,12 @@ var s1 = Symbol("foo");
 var s2 = Symbol("foo");
 
 s1 === s2 // false
+
+//重复利用的Symbol
+var s1 = Symbol.for('foo');
+var s2 = Symbol.for('foo');
+
+s1 === s2 // true
 </code></pre>
                     <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank">MDN Symbol</a></p>
                 </section>
